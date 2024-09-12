@@ -12,14 +12,10 @@ const getAge = (birthDate) => Math.floor((new Date() - new Date(birthDate).getTi
 
 <template>
   <ul>
-    <li v-for="user in usuarios" :key="user.id" class="listUsers">
+    <li v-for="user in usuarios" :key="user.id" >
       {{ user.nombre + user.apellido }}, {{ getAge(user.fechaNacimiento) }} años
     </li>
   </ul>
 </template>
 
-<style>
-.listUsers {
-  font-family: 'Georgia';
-}
-</style>
+
